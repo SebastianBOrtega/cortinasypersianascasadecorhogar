@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venecias - Cortinas y Persianas Casa Hogar</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+   <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="logo">
+      <img src="Imágenes/logo1.png" alt="Logo de la empresa">
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#productos">Productos</a>
+          <ul class="dropdown-menu">
+            <li><a href="cortinas.html">Cortinas y Persianas</a></li>
+            <li><a href="#toldos-sombrillas">Toldos y Sombrillas</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL - VENECIAS -->
+  <main class="contenido-categoria">
+    <!-- Título y descripción -->
+    <div class="categoria-header">
+      <h1>Venecias</h1>
+      <p class="categoria-descripcion">2 tamaños horizontales de tela opaca suspendidas entre 2 vías, permite controlar el nivel de privacidad. Sistema versátil que combina funcionalidad y estética para cualquier ambiente.</p>
+      <a href="cortinas.html" class="btn-volver">← Volver a Cortinas y Persianas</a>
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div class="galeria-imagenes">
+      <div class="imagen-item" onclick="abrirModal('venecias1.jpeg')">
+        <img src="venecias1.jpeg" alt="Venecias 1">
+        <div class="imagen-overlay">
+          <span>Ver imagen completa</span>
+        </div>
+      </div>
+
+      <div class="imagen-item" onclick="abrirModal('venecias2.jpeg')">
+        <img src="venecias2.jpeg" alt="Venecias 2">
+        <div class="imagen-overlay">
+          <span>Ver imagen completa</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL PARA VER IMAGEN COMPLETA -->
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img class="modal-imagen" id="imagenModal">
+    <div class="modal-navegacion">
+      <button class="nav-btn prev-btn" onclick="imagenAnterior(event)">❮</button>
+      <button class="nav-btn next-btn" onclick="imagenSiguiente(event)">❯</button>
+    </div>
+  </div>
+
+   <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-col">
+      <h4>Nosotros</h4>
+      <p>Contáctanos</p>
+      <p>Nuestro compromiso</p>
+    </div>
+    <div class="footer-col">
+      <h4>Línea de atención al cliente</h4>
+      <p><strong>Celular 1:</strong> 316 853 1755</p>
+      <p><strong>Celular 2:</strong> 301 525 5604</p>
+    </div>
+    <div class="footer-col">
+      <h4>Dirección</h4>
+      <p>Pasto, Nariño</p>
+      <p>Colombia</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT PARA EL MODAL -->
+  <script>
+    const imagenes = [
+      'venecias1.jpeg', 'venecias2.jpeg', 'venecias3.jpeg', 'venecias4.jpeg', 'venecias5.jpeg',
+      'venecias6.jpeg', 'venecias7.jpeg', 'venecias8.jpeg', 'venecias9.jpeg', 'venecias10.jpeg',
+      'venecias11.jpeg', 'venecias12.jpeg', 'venecias13.jpeg', 'venecias14.jpeg', 'venecias15.jpeg'
+    ];
+    let imagenActual = 0;
+
+    function abrirModal(imagen) {
+      const modal = document.getElementById('modal');
+      const imagenModal = document.getElementById('imagenModal');
+      
+      imagenActual = imagenes.indexOf(imagen);
+      imagenModal.src = imagen;
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function imagenSiguiente(event) {
+      event.stopPropagation();
+      imagenActual = (imagenActual + 1) % imagenes.length;
+      document.getElementById('imagenModal').src = imagenes[imagenActual];
+    }
+
+    // Cerrar modal con tecla Escape
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        cerrarModal();
+      }
+    });
+
+    // Navegación con teclas
+    document.addEventListener('keydown', function(event) {
+      if (document.getElementById('modal').style.display === 'block') {
+        if (event.key === 'ArrowRight') {
+          imagenSiguiente(event);
+        } else if (event.key === 'ArrowLeft') {
+          imagenAnterior(event);
+        }
+      }
+    });
+  </script>
+
+</body>
+</html
