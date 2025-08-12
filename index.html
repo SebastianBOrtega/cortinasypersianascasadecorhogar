@@ -3,24 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cortinas y Persianas - Casa Decor Hogar</title>
+  <title>Cortinas y Persianas</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <!-- ENCABEZADO -->
+   <!-- ENCABEZADO -->
   <header class="encabezado">
     <div class="logo">
       <img src="Imágenes/logo1.png" alt="Logo de la empresa">
     </div>
-    
-    <!-- Botón hamburguesa para móviles -->
-    <button class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    
-    <nav class="menu" id="menu">
+    <nav class="menu">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li class="dropdown">
@@ -35,209 +27,85 @@
     </nav>
   </header>
 
-  <!-- CARRUSEL -->
-  <section class="carrusel">
-    <button class="prev" aria-label="Imagen anterior">&#10094;</button>
-    <div class="slides-container" id="carrusel">
-      <div class="slide">
-        <img src="Imágenes/logo2.jpeg" alt="Ambientes con estilo">
-        <div class="frase">AMBIENTES CON ESTILO Y CONFORT</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo3.jpeg" alt="Persianas transformadoras">
-        <div class="frase">PERSIANAS QUE TRANSFORMAN TU HOGAR</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo4.jpeg" alt="Innovación y elegancia">
-        <div class="frase">INNOVACIÓN Y ELEGANCIA EN CADA VENTANA</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo5.jpeg" alt="Diseños inspiradores">
-        <div class="frase">DISEÑOS QUE INSPIRAN CALIDEZ</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo6.jpeg" alt="Detalles únicos">
-        <div class="frase">DETALLES QUE HACEN LA DIFERENCIA</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo7.jpeg" alt="Confort visual">
-        <div class="frase">CONFORT VISUAL PARA TODO MOMENTO</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo8.jpeg" alt="Elegancia adaptable">
-        <div class="frase">ELEGANCIA QUE SE ADAPTA A TU ESTILO</div>
-      </div>
-      <div class="slide">
-        <img src="Imágenes/logo9.jpeg" alt="Contraste funcional">
-        <div class="frase">CONTRASTE Y FUNCIONALIDAD</div>
-      </div>
+ <!-- CARRUSEL -->
+<section class="carrusel">
+  <button class="prev">&#10094;</button>
+  <div class="slides-container" id="carrusel">
+    <div class="slide">
+      <img src="Imágenes/logo2.jpeg" alt="Imagen 1">
+      <div class="frase">AMBIENTES CON ESTILO Y CONFORT</div>
     </div>
-    <button class="next" aria-label="Imagen siguiente">&#10095;</button>
-    
-    <!-- Indicadores del carrusel -->
-    <div class="carrusel-indicadores">
-      <span class="indicador active" onclick="irASlide(0)"></span>
-      <span class="indicador" onclick="irASlide(1)"></span>
-      <span class="indicador" onclick="irASlide(2)"></span>
-      <span class="indicador" onclick="irASlide(3)"></span>
-      <span class="indicador" onclick="irASlide(4)"></span>
-      <span class="indicador" onclick="irASlide(5)"></span>
-      <span class="indicador" onclick="irASlide(6)"></span>
-      <span class="indicador" onclick="irASlide(7)"></span>
+    <div class="slide">
+      <img src="Imágenes/logo3.jpeg" alt="Imagen 2">
+      <div class="frase">PERSIANAS QUE TRANSFORMAN TU HOGAR</div>
     </div>
-  </section>
+    <div class="slide">
+      <img src="Imágenes/logo4.jpeg" alt="Imagen 3">
+      <div class="frase">INNOVACIÓN Y ELEGANCIA EN CADA VENTANA</div>
+    </div>
+    <div class="slide">
+      <img src="Imágenes/logo5.jpeg" alt="Imagen 4">
+      <div class="frase">DISEÑOS QUE INSPIRAN CALIDEZ</div>
+    </div>
+    <div class="slide">
+      <img src="Imágenes/logo6.jpeg" alt="Imagen 5">
+      <div class="frase">DETALLES QUE HACEN LA DIFERENCIA</div>
+    </div>
+    <div class="slide">
+      <img src="Imágenes/logo7.jpeg" alt="Imagen 6">
+      <div class="frase">CONFORT VISUAL PARA TODO MOMENTO</div>
+    </div>
+    <div class="slide">
+      <img src="Imágenes/logo8.jpeg" alt="Imagen 7">
+      <div class="frase">ELEGANCIA QUE SE ADAPTA A TU ESTILO</div>
+    </div>
+    <div class="slide">
+      <img src="Imágenes/logo9.jpeg" alt="Imagen 8">
+      <div class="frase">CONTRASTE Y FUNCIONALIDAD</div>
+    </div>
+  </div>
+  <button class="next">&#10095;</button>
+</section>
 
-  <!-- SECCIÓN DE PRESENTACIÓN -->
-  <section class="presentacion">
-    <div class="container">
-      <h2>Bienvenidos a Casa Decor Hogar</h2>
-      <p>Especialistas en cortinas y persianas de alta calidad con más de 11 años de experiencia transformando espacios en Pasto, Nariño.</p>
-      <div class="caracteristicas-home">
-        <div class="caracteristica">
-          <div class="icono">⭐</div>
-          <h3>11 Años de Experiencia</h3>
-          <p>Líderes en el mercado local</p>
-        </div>
-        <div class="caracteristica">
-          <div class="icono">🚛</div>
-          <h3>Servicio a Domicilio</h3>
-          <p>Nos desplazamos hasta tu hogar</p>
-        </div>
-        <div class="caracteristica">
-          <div class="icono">⚡</div>
-          <h3>Instalación Profesional</h3>
-          <p>Equipo técnico especializado</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PIE DE PÁGINA -->
+   <!-- PIE DE PÁGINA -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>Nosotros</h4>
-        <p><a href="nosotros.html">Contáctanos</a></p>
-        <p><a href="nosotros.html">Nuestro compromiso</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Línea de atención al cliente</h4>
-        <p><strong>Celular 1:</strong> <a href="tel:+573168531755">316 853 1755</a></p>
-        <p><strong>Celular 2:</strong> <a href="tel:+573015255604">301 525 5604</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Dirección</h4>
-        <p>Pasto, Nariño</p>
-        <p>Colombia</p>
-      </div>
+    <div class="footer-col">
+      <h4>Nosotros</h4>
+      <p>Contáctanos</p>
+      <p>Nuestro compromiso</p>
+    </div>
+    <div class="footer-col">
+      <h4>Línea de atención al cliente</h4>
+      <p><strong>Celular 1:</strong> 316 853 1755</p>
+      <p><strong>Celular 2:</strong> 301 525 5604</p>
+    </div>
+    <div class="footer-col">
+      <h4>Dirección</h4>
+      <p>Pasto, Nariño</p>
+      <p>Colombia</p>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT -->
+   <!-- CARRUSEL JS -->
   <script>
-    // CARRUSEL
     const slides = document.querySelectorAll('.slide');
-    const indicadores = document.querySelectorAll('.indicador');
     const next = document.querySelector('.next');
     const prev = document.querySelector('.prev');
     let currentIndex = 0;
-    let autoSlideInterval;
 
     function mostrarSlide(index) {
       const container = document.querySelector('.slides-container');
       container.style.transform = `translateX(-${index * 100}%)`;
-      
-      // Actualizar indicadores
-      indicadores.forEach((ind, i) => {
-        ind.classList.toggle('active', i === index);
-      });
     }
 
-    function siguienteSlide() {
+    next.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % slides.length;
       mostrarSlide(currentIndex);
-    }
-
-    function anteriorSlide() {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      mostrarSlide(currentIndex);
-    }
-
-    function irASlide(index) {
-      currentIndex = index;
-      mostrarSlide(currentIndex);
-      reiniciarAutoSlide();
-    }
-
-    function iniciarAutoSlide() {
-      autoSlideInterval = setInterval(siguienteSlide, 5000);
-    }
-
-    function detenerAutoSlide() {
-      clearInterval(autoSlideInterval);
-    }
-
-    function reiniciarAutoSlide() {
-      detenerAutoSlide();
-      iniciarAutoSlide();
-    }
-
-    // Event listeners
-    next.addEventListener('click', () => {
-      siguienteSlide();
-      reiniciarAutoSlide();
     });
 
     prev.addEventListener('click', () => {
-      anteriorSlide();
-      reiniciarAutoSlide();
-    });
-
-    // Pausar autoSlide al hacer hover
-    const carrusel = document.querySelector('.carrusel');
-    carrusel.addEventListener('mouseenter', detenerAutoSlide);
-    carrusel.addEventListener('mouseleave', iniciarAutoSlide);
-
-    // Iniciar autoSlide al cargar la página
-    iniciarAutoSlide();
-
-    // MENÚ MÓVIL
-    const menuToggle = document.getElementById('menuToggle');
-    const menu = document.getElementById('menu');
-
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
-    });
-
-    // Cerrar menú al hacer clic en un enlace (en móviles)
-    const menuLinks = document.querySelectorAll('.menu a');
-    menuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          menu.classList.remove('active');
-          menuToggle.classList.remove('active');
-        }
-      });
-    });
-
-    // Cerrar menú al redimensionar ventana
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        menu.classList.remove('active');
-        menuToggle.classList.remove('active');
-      }
-    });
-
-    // Navegación con teclado para accesibilidad
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        anteriorSlide();
-        reiniciarAutoSlide();
-      } else if (e.key === 'ArrowRight') {
-        siguienteSlide();
-        reiniciarAutoSlide();
-      }
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      mostrarSlide(currentIndex);
     });
   </script>
 
