@@ -174,12 +174,11 @@ body {
   background-color: #000000;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 10px 20px;
   flex-wrap: wrap;
   min-height: unset;
-  gap: 40px;
 }
 
 .footer-col {
