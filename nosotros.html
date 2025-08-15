@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Casa Decor Hogar - 11 años de experiencia en cortinas y persianas en Pasto, Nariño. Conoce nuestra historia, misión y visión.">
   <title>Nosotros - Casa Decor Hogar</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-   <!-- ENCABEZADO -->
+  <!-- ENCABEZADO -->
   <header class="encabezado">
     <div class="logo">
-      <img src="Imágenes/logo1.png" alt="Logo de la empresa">
+      <img src="ImÃ¡genes/logo1.png" alt="Logo Casa Decor Hogar">
     </div>
     <nav class="menu">
       <ul>
@@ -22,7 +23,7 @@
             <li><a href="#toldos-sombrillas">Toldos y Sombrillas</a></li>
           </ul>
         </li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#nosotros" class="active">Nosotros</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +31,7 @@
   <!-- CONTENIDO PRINCIPAL - NOSOTROS -->
   <main class="contenido-nosotros">
     <!-- Sección Hero -->
-    <section class="nosotros-hero">
+    <section class="nosotros-hero" id="nosotros">
       <div class="hero-content">
         <h1>Sobre Nosotros</h1>
         <p class="hero-subtitle">Transformando espacios con estilo y calidad desde hace más de una década</p>
@@ -138,6 +139,40 @@
             </div>
           </div>
         </div>
+
+        <!-- Sección de valores adicionales para móviles -->
+        <div class="valores-adicionales" style="margin-top: 60px; padding: 40px 20px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+          <h3 style="text-align: center; color: #333; font-size: 1.8rem; margin-bottom: 30px;">Nuestros Valores</h3>
+          <div class="valores-lista" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div class="valor-item" style="text-align: center; padding: 20px;">
+              <div style="font-size: 2rem; margin-bottom: 10px;">💎</div>
+              <h4 style="color: #333; margin-bottom: 10px;">Excelencia</h4>
+              <p style="color: #666; font-size: 0.9rem;">Buscamos la perfección en cada detalle de nuestro trabajo.</p>
+            </div>
+            <div class="valor-item" style="text-align: center; padding: 20px;">
+              <div style="font-size: 2rem; margin-bottom: 10px;">🤝</div>
+              <h4 style="color: #333; margin-bottom: 10px;">Confianza</h4>
+              <p style="color: #666; font-size: 0.9rem;">Construimos relaciones duraderas basadas en la confianza mutua.</p>
+            </div>
+            <div class="valor-item" style="text-align: center; padding: 20px;">
+              <div style="font-size: 2rem; margin-bottom: 10px;">🌱</div>
+              <h4 style="color: #333; margin-bottom: 10px;">Innovación</h4>
+              <p style="color: #666; font-size: 0.9rem;">Constantemente buscamos nuevas tendencias y tecnologías.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonios simplificados para móviles -->
+        <div class="testimonios-seccion" style="margin-top: 60px; text-align: center;">
+          <h3 style="color: #333; font-size: 1.8rem; margin-bottom: 30px;">Lo que dicen nuestros clientes</h3>
+          <div class="testimonio-destacado" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; max-width: 600px; margin: 0 auto;">
+            <div style="font-size: 3rem; margin-bottom: 15px;">💬</div>
+            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
+              "Excelente servicio, quedamos muy satisfechos con el resultado. Las cortinas superaron nuestras expectativas y el servicio fue muy profesional."
+            </p>
+            <p style="font-weight: bold; opacity: 0.9;">- Cliente satisfecho en Pasto</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -148,22 +183,25 @@
         <p>Contáctanos hoy mismo y descubre por qué somos la mejor opción en cortinas y persianas</p>
         <div class="cta-buttons">
           <a href="cortinas.html" class="btn-cta primario">Ver Productos</a>
+          <a href="tel:3168531755" class="btn-cta secundario">Llamar Ahora</a>
+          <a href="https://wa.me/573168531755" class="btn-cta" style="background-color: #25D366; border-color: #25D366;">WhatsApp</a>
         </div>
       </div>
     </section>
   </main>
 
-   <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA -->
   <footer class="footer">
     <div class="footer-col">
       <h4>Nosotros</h4>
+      <p><a href="#nosotros" style="color: white; text-decoration: none;">Conoce nuestra historia</a></p>
       <p>Contáctanos</p>
       <p>Nuestro compromiso</p>
     </div>
     <div class="footer-col">
       <h4>Línea de atención al cliente</h4>
-      <p><strong>Celular 1:</strong> 316 853 1755</p>
-      <p><strong>Celular 2:</strong> 301 525 5604</p>
+      <p><strong>Celular 1:</strong> <a href="tel:3168531755" style="color: white; text-decoration: none;">316 853 1755</a></p>
+      <p><strong>Celular 2:</strong> <a href="tel:3015255604" style="color: white; text-decoration: none;">301 525 5604</a></p>
     </div>
     <div class="footer-col">
       <h4>Dirección</h4>
@@ -172,5 +210,275 @@
     </div>
   </footer>
 
+  <!-- JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animación de entrada para elementos
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.caracteristica-card, .mv-card, .razon-item, .valor-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '50px'
+        });
+
+        elements.forEach((element, index) => {
+          element.style.opacity = '0';
+          element.style.transform = 'translateY(30px)';
+          element.style.transition = `all 0.6s ease ${index * 0.1}s`;
+          observer.observe(element);
+        });
+      };
+
+      // Inicializar animaciones
+      animateOnScroll();
+
+      // Navegación suave para enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Mejorar experiencia táctil en móviles
+      if ('ontouchstart' in window) {
+        const buttons = document.querySelectorAll('.btn-cta');
+        buttons.forEach(button => {
+          button.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+          });
+          
+          button.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+          });
+        });
+      }
+
+      // Efecto parallax suave para hero en desktop
+      if (window.innerWidth > 768) {
+        window.addEventListener('scroll', () => {
+          const scrolled = window.pageYOffset;
+          const hero = document.querySelector('.nosotros-hero');
+          if (hero && scrolled < hero.offsetHeight) {
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+          }
+        });
+      }
+
+      // Contador animado para años de experiencia
+      const animateCounter = (element, target, duration = 2000) => {
+        let start = 0;
+        const increment = target / (duration / 16);
+        
+        const timer = setInterval(() => {
+          start += increment;
+          if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.floor(start);
+          }
+        }, 16);
+      };
+
+      // Buscar elementos que contengan "11 años" y animarlos
+      const experienceElements = document.querySelectorAll('strong');
+      experienceElements.forEach(element => {
+        if (element.textContent.includes('11 años')) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                element.innerHTML = '<span class="counter">0</span> años de experiencia';
+                animateCounter(element.querySelector('.counter'), 11, 2000);
+                observer.unobserve(element);
+              }
+            });
+          });
+          observer.observe(element);
+        }
+      });
+    });
+
+    // Función para manejar el clic en botones de contacto
+    function contactar(tipo) {
+      // Agregar análitics o tracking aquí si es necesario
+      if (tipo === 'telefono') {
+        window.open('tel:3168531755', '_self');
+      } else if (tipo === 'whatsapp') {
+        window.open('https://wa.me/573168531755', '_blank');
+      }
+    }
+  </script>
+
+  <!-- Estilos adicionales para mejorar la responsividad -->
+  <style>
+    .active {
+      color: #667eea !important;
+    }
+
+    /* Mejoras para móviles específicas */
+    @media (max-width: 768px) {
+      .valores-adicionales {
+        margin-top: 40px !important;
+        padding: 30px 15px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .valores-adicionales h3 {
+        font-size: 1.5rem !important;
+      }
+      
+      .valores-lista {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+      }
+      
+      .valor-item {
+        padding: 15px !important;
+      }
+      
+      .valor-item div {
+        font-size: 1.8rem !important;
+      }
+      
+      .valor-item h4 {
+        font-size: 1.1rem !important;
+      }
+      
+      .testimonios-seccion {
+        margin-top: 40px !important;
+        padding: 0 15px;
+      }
+      
+      .testimonios-seccion h3 {
+        font-size: 1.5rem !important;
+      }
+      
+      .testimonio-destacado {
+        padding: 25px 20px !important;
+        margin: 0 10px !important;
+      }
+      
+      .testimonio-destacado p {
+        font-size: 1rem !important;
+      }
+      
+      .cta-buttons {
+        gap: 10px !important;
+      }
+      
+      .btn-cta {
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
+        min-width: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .valores-adicionales {
+        padding: 25px 10px !important;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      
+      .valores-adicionales h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .valor-item {
+        padding: 12px !important;
+      }
+      
+      .valor-item div {
+        font-size: 1.5rem !important;
+        margin-bottom: 8px !important;
+      }
+      
+      .valor-item h4 {
+        font-size: 1rem !important;
+        margin-bottom: 8px !important;
+      }
+      
+      .valor-item p {
+        font-size: 0.85rem !important;
+      }
+      
+      .testimonios-seccion h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 20px !important;
+      }
+      
+      .testimonio-destacado {
+        padding: 20px 15px !important;
+        margin: 0 5px !important;
+      }
+      
+      .testimonio-destacado div {
+        font-size: 2.5rem !important;
+        margin-bottom: 12px !important;
+      }
+      
+      .testimonio-destacado p {
+        font-size: 0.95rem !important;
+      }
+      
+      .cta-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+      }
+      
+      .btn-cta {
+        width: 100% !important;
+        max-width: 280px !important;
+        text-align: center !important;
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+      }
+    }
+
+    /* Animaciones adicionales */
+    .counter {
+      font-weight: bold;
+      color: #667eea;
+    }
+    
+    @media (min-width: 769px) {
+      .caracteristica-card:hover,
+      .mv-card:hover,
+      .razon-item:hover {
+        transform: translateY(-5px);
+      }
+      
+      .btn-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      }
+    }
+
+    /* Mejoras de accesibilidad */
+    .btn-cta:focus,
+    .caracteristica-card:focus,
+    .mv-card:focus {
+      outline: 2px solid #667eea;
+      outline-offset: 2px;
+    }
+  </style>
 </body>
 </html>
