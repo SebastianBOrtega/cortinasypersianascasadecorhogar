@@ -17,7 +17,7 @@ body {
   height: 80px;
 }
 
-/* MENÃš */
+/* MENÚ */
 .menu ul {
   list-style: none;
   display: flex;
@@ -34,7 +34,7 @@ body {
   font-size: 16px;
 }
 
-/* MENÃš DESPLEGABLE */
+/* MENÚ DESPLEGABLE */
 .dropdown {
   position: relative;
 }
@@ -169,7 +169,7 @@ body {
   right: 10px;
 }
 
-/* PIE DE PÃGINA */
+/* PIE DE PÁGINA */
 .footer {
   background-color: #000000;
   color: white;
@@ -191,7 +191,7 @@ body {
   font-size: 18px;
 }
 
-/* ESTILOS PARA PÃGINA DE CORTINAS */
+/* ESTILOS PARA PÁGINA DE CORTINAS */
 .contenido-cortinas {
   padding: 40px 20px;
   max-width: 1200px;
@@ -282,7 +282,7 @@ body {
   background-color: #555;
 }
 
-/* ESTILOS PARA PÃGINAS DE CATEGORÃAS */
+/* ESTILOS PARA PÁGINAS DE CATEGORÍAS */
 .contenido-categoria {
   padding: 40px 20px;
   max-width: 1200px;
@@ -330,7 +330,7 @@ body {
   background-color: #555;
 }
 
-/* GALERÃA DE IMÃGENES */
+/* GALERÍA DE IMÁGENES */
 .galeria-imagenes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -464,7 +464,7 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* ESTILOS PARA PÃGINA NOSOTROS */
+/* ESTILOS PARA PÁGINA NOSOTROS */
 .contenido-nosotros {
   min-height: calc(100vh - 200px);
 }
@@ -511,7 +511,7 @@ body {
   opacity: 0.9;
 }
 
-/* InformaciÃ³n Principal */
+/* Información Principal */
 .info-principal {
   padding: 80px 20px;
   background-color: #f8f9fa;
@@ -575,7 +575,7 @@ body {
   margin: 0 auto;
 }
 
-/* CaracterÃ­sticas Grid */
+/* Características Grid */
 .caracteristicas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -625,7 +625,7 @@ body {
   font-size: 1rem;
 }
 
-/* MisiÃ³n y VisiÃ³n */
+/* Misión y Visión */
 .mision-vision {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -671,7 +671,7 @@ body {
   font-size: 1rem;
 }
 
-/* Por quÃ© elegirnos */
+/* Por qué elegirnos */
 .por-que-elegirnos {
   text-align: center;
 }
@@ -829,7 +829,7 @@ body {
 }
 
 /* ============================================ */
-/* RESPONSIVE PARA TABLETS PEQUEÃ'AS (768px y menos) */
+/* RESPONSIVE PARA TABLETS PEQUEÑAS (768px y menos) */
 /* ============================================ */
 @media (max-width: 768px) {
   /* ENCABEZADO */
@@ -880,7 +880,7 @@ body {
     font-size: 20px;
   }
 
-  /* PIE DE PÃGINA */
+  /* PIE DE PÁGINA */
   .footer {
     flex-direction: column;
     text-align: center;
@@ -890,16 +890,10 @@ body {
   .footer-col {
     margin-bottom: 15px;
     max-width: 100%;
-    text-align: center;
   }
 
   .footer-col h4 {
     font-size: 16px;
-    text-align: center;
-  }
-
-  .footer-col p {
-    text-align: center;
   }
 
   /* CORTINAS */
@@ -935,7 +929,7 @@ body {
     font-size: 11px;
   }
 
-  /* CATEGORÃAS */
+  /* CATEGORÍAS */
   .contenido-categoria {
     padding: 30px 15px;
   }
@@ -1123,7 +1117,7 @@ body {
 }
 
 /* ============================================ */
-/* RESPONSIVE PARA MÃ"VILES (480px y menos) */
+/* RESPONSIVE PARA MÓVILES (480px y menos) */
 /* ============================================ */
 @media (max-width: 480px) {
   /* ENCABEZADO */
@@ -1177,26 +1171,19 @@ body {
     font-size: 16px;
   }
 
-  /* PIE DE PÃGINA */
+  /* PIE DE PÁGINA */
   .footer {
     padding: 15px 10px;
-    text-align: center;
-  }
-
-  .footer-col {
-    text-align: center;
   }
 
   .footer-col h4 {
     font-size: 14px;
     margin-bottom: 8px;
-    text-align: center;
   }
 
   .footer-col p {
     font-size: 12px;
     margin: 2px 0;
-    text-align: center;
   }
 
   /* CORTINAS */
@@ -1237,7 +1224,7 @@ body {
     width: 80%;
   }
 
-  /* CATEGORÃAS */
+  /* CATEGORÍAS */
   .contenido-categoria {
     padding: 20px 10px;
   }
@@ -1444,7 +1431,7 @@ body {
 }
 
 /* ============================================ */
-/* RESPONSIVE PARA MÃ"VILES MUY PEQUEÃ'OS (360px y menos) */
+/* RESPONSIVE PARA MÓVILES MUY PEQUEÑOS (360px y menos) */
 /* ============================================ */
 @media (max-width: 360px) {
   .encabezado {
@@ -1477,23 +1464,6 @@ body {
   .prev, .next {
     padding: 5px 8px;
     font-size: 14px;
-  }
-
-  /* PIE DE PÃGINA */
-  .footer {
-    text-align: center;
-  }
-
-  .footer-col {
-    text-align: center;
-  }
-
-  .footer-col h4 {
-    text-align: center;
-  }
-
-  .footer-col p {
-    text-align: center;
   }
 
   .categoria-header h1 {
@@ -1542,7 +1512,7 @@ body {
     font-size: 0.95rem;
   }
 
-  /* Ajustes para imÃ¡genes y contenido muy pequeÃ±o */
+  /* Ajustes para imágenes y contenido muy pequeño */
   .imagen-item img {
     height: 200px;
   }
