@@ -884,24 +884,16 @@ body {
   .footer {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 30px 20px;
+    gap: 15px;
   }
 
   .footer-col {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     max-width: 100%;
   }
 
   .footer-col h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-
-  .footer-col p {
-    font-size: 14px;
-    margin: 5px 0;
-    line-height: 1.5;
+    font-size: 16px;
   }
 
   /* CORTINAS */
@@ -1132,3 +1124,405 @@ body {
   .encabezado {
     padding: 10px 15px;
   }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .menu ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu ul li a {
+    font-size: 13px;
+  }
+
+  .dropdown-menu {
+    min-width: 150px;
+    font-size: 12px;
+  }
+
+  .dropdown-menu li a {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  /* CARRUSEL */
+  .carrusel {
+    max-height: 300px;
+  }
+
+  .slide img {
+    max-height: 300px;
+  }
+
+  .frase {
+    font-size: 1rem;
+    bottom: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    max-width: 80%;
+  }
+
+  .prev, .next {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  /* PIE DE PÁGINA */
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer-col h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .footer-col p {
+    font-size: 12px;
+    margin: 2px 0;
+  }
+
+  /* CORTINAS */
+  .contenido-cortinas {
+    padding: 20px 10px;
+  }
+
+  .categorias-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .categoria-card {
+    margin: 0 5px;
+  }
+
+  .categoria-imagen {
+    height: 180px;
+  }
+
+  .categoria-info {
+    padding: 15px;
+  }
+
+  .categoria-info h3 {
+    font-size: 16px;
+  }
+
+  .categoria-info p {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .btn-ver-mas {
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 80%;
+  }
+
+  /* CATEGORÍAS */
+  .contenido-categoria {
+    padding: 20px 10px;
+  }
+
+  .categoria-header {
+    padding: 20px 15px;
+  }
+
+  .categoria-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .categoria-descripcion {
+    font-size: 0.95rem;
+  }
+
+  .btn-volver {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .galeria-imagenes {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .imagen-item {
+    margin: 0 5px;
+  }
+
+  .imagen-item img {
+    height: 220px;
+  }
+
+  .imagen-overlay span {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  /* MODAL */
+  .modal-imagen {
+    max-width: 98%;
+    max-height: 80%;
+  }
+
+  .cerrar {
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+  }
+
+  .modal-navegacion {
+    padding: 0 10px;
+  }
+
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  /* NOSOTROS */
+  .nosotros-hero {
+    padding: 40px 15px;
+  }
+
+  .nosotros-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .info-principal {
+    padding: 40px 15px;
+  }
+
+  .info-card.principal {
+    padding: 25px 20px;
+  }
+
+  .info-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .descripcion-empresa {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .icon-home {
+    font-size: 2.5rem;
+    padding: 12px;
+  }
+
+  .caracteristicas-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .caracteristica-card {
+    padding: 25px 20px;
+    margin: 0 5px;
+  }
+
+  .caracteristica-card .icon {
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+
+  .caracteristica-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .caracteristica-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .mision-vision {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .mv-card {
+    padding: 25px 20px;
+    margin: 0 5px;
+  }
+
+  .mv-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .mv-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .mv-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .por-que-elegirnos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .razones-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .razon-item {
+    padding: 20px 15px;
+    margin: 0 5px;
+  }
+
+  .numero {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .razon-item h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .razon-item p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .cta-nosotros {
+    padding: 40px 15px;
+  }
+
+  .cta-nosotros h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-nosotros p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-cta {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* ============================================ */
+/* RESPONSIVE PARA MÓVILES MUY PEQUEÑOS (360px y menos) */
+/* ============================================ */
+@media (max-width: 360px) {
+  .encabezado {
+    padding: 8px 10px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .menu ul li a {
+    font-size: 12px;
+  }
+
+  .carrusel {
+    max-height: 250px;
+  }
+
+  .slide img {
+    max-height: 250px;
+  }
+
+  .frase {
+    font-size: 0.9rem;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+  }
+
+  .prev, .next {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .categoria-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .categoria-descripcion {
+    font-size: 0.9rem;
+  }
+
+  .nosotros-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .info-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .descripcion-empresa {
+    font-size: 0.9rem;
+  }
+
+  .caracteristica-card h3,
+  .mv-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .caracteristica-card p,
+  .mv-card p {
+    font-size: 0.85rem;
+  }
+
+  .por-que-elegirnos h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-nosotros h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-cta {
+    font-size: 0.95rem;
+  }
+
+  /* Ajustes para imágenes y contenido muy pequeño */
+  .imagen-item img {
+    height: 200px;
+  }
+
+  .modal-imagen {
+    max-width: 95%;
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
