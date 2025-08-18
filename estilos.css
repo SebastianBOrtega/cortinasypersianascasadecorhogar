@@ -885,6 +885,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 15px;
+    align-items: center;
   }
 
   .footer-col {
@@ -1171,19 +1172,32 @@ body {
     font-size: 16px;
   }
 
-  /* PIE DE PÁGINA */
+  /* PIE DE PÁGINA - CORRECCIÓN PRINCIPAL PARA MÓVILES */
   .footer {
-    padding: 15px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-col {
+    margin-bottom: 0;
+    max-width: 100%;
+    text-align: center;
   }
 
   .footer-col h4 {
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .footer-col p {
-    font-size: 12px;
-    margin: 2px 0;
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
   }
 
   /* CORTINAS */
@@ -1464,6 +1478,21 @@ body {
   .prev, .next {
     padding: 5px 8px;
     font-size: 14px;
+  }
+
+  /* PIE DE PÁGINA - AJUSTE ADICIONAL PARA PANTALLAS MUY PEQUEÑAS */
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .footer-col p {
+    font-size: 13px;
+    margin: 3px 0;
   }
 
   .categoria-header h1 {
